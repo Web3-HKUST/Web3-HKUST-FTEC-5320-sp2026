@@ -47,7 +47,7 @@ To deploy our contracts, we will use a public blockchain to deploy our smart con
 1. Install [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) on Chrome, follow the instructions on the app to create a new wallet. After entering the correct phrases, a new account will be created automatically. You can create any number of accounts by clicking the upper right icon and *Create Account*.
 2. Switch to Sepolia Testnet: click the *Ethereum Mainnet* at the top right corner of the wallet page and turn on the testnet list by setting *Show/hide test networks*. Switch the network to *Sepolia Testnet*.
 3. Get some free ETH: go to a [faucet](https://sepoliafaucet.com/) and enter your address, you will get 0.5 ETH for testing. You would have to create a free Alchemy account.
-4. Open [Remix](https://remix.ethereum.org/) in Chrome as well, in the *Deploy & run transactions* tab, set the environment to *Injected Web3*. This will launch a popup page to connect with your wallet.
+4. Open [Remix](https://remix.ethereum.org/#lang=en&optimize&runs=200&evmVersion&version=soljson-v0.8.20+commit.a1b79de6.js) in Chrome as well, in the *Deploy & run transactions* tab, set the environment to *Injected Web3*. This will launch a popup page to connect with your wallet.
 
 
 
@@ -57,7 +57,7 @@ In this part, you need to create three tokens introduced before. These tokens al
 contracts/EUSD.sol
 contracts/sAsset.sol
 ```
-1. Open [Remix](https://remix.ethereum.org/) in your web browser, this is an online IDE where you will write, test and deploy your smart contracts.
+1. Open [Remix](https://remix.ethereum.org/#lang=en&optimize&runs=200&evmVersion&version=soljson-v0.8.20+commit.a1b79de6.js) in your web browser, this is an online IDE where you will write, test and deploy your smart contracts.
 2. Add provided contracts in Remix and compile them in the *Solidity compiler* tab on the left. 
 3. Create EUSD by deploying `EUSD.sol`, this will create a contract deployment transaction. The information and status of the transaction will be displayed in the terminal. Deployment is done using the *Deploy and run transactions* tab on the left. Make sure you connect your Metamask wallet by selecting your *Environment* to be *Injected provider - Metamask*.
 4. Create sBNB and sTSLA by deploying `sAsset.sol` with corresponding parameters ``(name, symbol, initialSupply)``, `name` and `symbol` are provided in the token table in the section above, `initialSupply = 0`.
