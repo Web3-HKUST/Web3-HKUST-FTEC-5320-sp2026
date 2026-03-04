@@ -1,5 +1,9 @@
-# Assignment 1: Overview
+
+# Big Picture of the Series of Assignments
+
 In these series of assignments, you will use Solidity to create synthetic assets and develop a decentralized trading platform to enable exchanges among these assets on the Ethereum testnet. In what follows, we explain our final goal and deploy a few simple smart contracts.
+
+*[Hint: This is a series of assignments. Assignment 1 is just the partial implementation of the whole system, and you will need to complete the rest in the following assignments. ]*
 
 **Synthetic assets** are tokenized derivatives that produce the same value as another asset. It enables you to trade some assets without holding the asset itself. For instance, on Ethereum, you can trade synthetic assets representing fiat currencies (e.g. synthetic USD), other cryptocurrencies like BTC, even stocks (e.g. synthetic TSLA), which behave like the underlying asset by tracking its price using **data oracles** (will be explained in Part 1). 
 
@@ -50,8 +54,7 @@ To deploy our contracts, we will use a public blockchain to deploy our smart con
 4. Open [Remix](https://remix.ethereum.org/#lang=en&optimize&runs=200&evmVersion&version=soljson-v0.8.20+commit.a1b79de6.js) in Chrome as well, in the *Deploy & run transactions* tab, set the environment to *Injected Web3*. This will launch a popup page to connect with your wallet.
 
 
-
-## Deploy Token Contracts
+## Assignment 1: Deploy Token Contracts and Verify on Etherscan
 In this part, you need to create three tokens introduced before. These tokens all follow the ERC20 standards and use the interface provided by [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/erc20). The smart contracts are provided in the following files:
 ```
 contracts/EUSD.sol
@@ -68,4 +71,4 @@ You will need to submit the addresses of your deployed contracts. Please make su
 
 Because this code will be used in later parts, make sure you are able to interact with your smart contracts. Test the main functionalities of the tokens like `transfer`, `transferFrom`, and `mint`, `burn` for sAsset. Note that we use [Access Control](https://docs.openzeppelin.com/contracts/4.x/access-control) in sAsset to govern who can mint and burn tokens. The contract creator can grant minter and burner roles to other accounts by calling the `grantRole` function. You can select different accounts under *Account* to test these functions.
 
-**Submit the etherscan links or contract addresses to the 3 contracts to canvas**
+***Submit the etherscan links or contract addresses to canvas for all three ERC20 tokens (EUSD, sBNB, sTSLA) that you created and make sure they are verified in etherscan.**
