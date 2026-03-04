@@ -5,7 +5,7 @@ In these series of assignments, you will use Solidity to create synthetic assets
 
 *[Hint: This is a series of assignments. Assignment 1 is just the partial implementation of the whole system, and you will need to complete the rest in the following assignments. ]*
 
-**Synthetic assets** are tokenized derivatives that produce the same value as another asset. It enables you to trade some assets without holding the asset itself. For instance, on Ethereum, you can trade synthetic assets representing fiat currencies (e.g. synthetic USD), other cryptocurrencies like BTC, even stocks (e.g. synthetic TSLA), which behave like the underlying asset by tracking its price using **data oracles** (will be explained in Part 1). 
+**Synthetic assets** are tokenized derivatives that produce the same value as another asset. It enables you to trade some assets without holding the asset itself. For instance, on Ethereum, you can trade synthetic assets representing fiat currencies (e.g. synthetic USD), other cryptocurrencies like BTC, even stocks (e.g. synthetic TSLA), which behave like the underlying asset by tracking its price using **data oracles** (will be explained later in the following classes). 
 
 We want to create a decentralized system to mint, manage, exchange synthetic assets, here are several example use cases to illustrate the application:
 
